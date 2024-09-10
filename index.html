@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Website</title>
+    <meta charset="utf-8" />
+    <meta inittial-scale="1.0" />
+    <style>
+      *{
+        font-family: "Courier new";
+        text-align: start;
+        background-color: rgb(6, 86,117);
+        background-color: rgb(1, 181,226);
+        margin-left: 0;
+        margin-right: 0;
+        color:rgb(0,0,0)
+      }
+
+      details{
+        max-width: 80%;
+      }
+      .bordered-list{
+        border: 1px solid black;
+        margin: 1rem;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container" style="
+        max-width: 80%;
+        margin: 0 0 2rem 2rem;
+        ">
+      <div id="navbar">
+    <nav
+      style="
+        display: flex;
+        flex-direction: row;
+        border-radius: 8px;
+        position: -webkit-sticky;
+        margin: 0;
+      "
+    >
+    <div style="
+      width: 100px; 
+      height: 100px; 
+      border-radius: 50%; 
+      overflow: hidden;
+      ">
+    <img src="./me1.jpeg" alt="me" style="
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;" 
+    />
+  </div>
+
+      <h1 style="padding-left: 7px">William Muchui</h1>
+      <ul style="display: flex; flex-direction: row; list-style-type: none">
+        <li style="padding-left: 7px"><a href="#about">About</a></li>
+        <li style="padding-left: 7px"><a href="#experience">Experience</a></li>
+        <li style="padding-left: 7px"><a href="#skills">Skills</a></li>
+        <li style="padding-left: 7px"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+      </div>
+
+    <div id="about" style="display:block">
+      <h1>About Me</h1>
+      <p id="about">
+      Highly skilled Full Stack Software Engineer with a strong foundation in software development
+      across the full software lifecycle. Proficient in a wide range of programming languages including
+      Python, JavaScript, TypeScript, and Rust. Experienced in building scalable, secure, and efficient
+      applications, with a particular focus on backend development, real-time communication, and
+      containerized environments. Passionate about open-source contributions and continuously
+      advancing the state-of-the-art in software engineering. Seeking to leverage expertise in Linux,
+      embedded systems, and CI/CD processes to deliver advanced software solutions. 
+      </p>
+    </div>
+
+    <div id="skills">
+      <h1>Skills</h1>
+      <ul style="list-style-type: none">
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Languages</summary>
+            <ul>
+              <li>Rust</li>
+              <li>C</li>
+              <li>C++</li>
+              <li>Python</li>
+              <li>Typescript</li>
+              <li>Javascript</li>
+            </ul>
+          </details>
+        </li>
+        
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>FrontEnd Development</summary>
+            <ul>
+              <li>React js</li>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>Tailwind Css</li>
+              <li>Bootstrap</li>
+              <li>Responsive UI Design</li>
+            </ul>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>BackEnd Development</summary>
+            <ul>
+              <li>Node js</li>
+              <li>Flask</li>
+              <li>Django</li>
+              <li>RESTful APIs</li>
+            </ul>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Real Time Communication</summary>
+            <ul>
+              <li>Web Sockets</li>
+              <li>Server Sent Events</li>
+            </ul>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Database Management</summary>
+            <ul>
+              <li>Postgresql</li>
+              <li>Mysql</li>
+              <li>MongoDB</li>
+              <li>Redis</li>
+              <li>Schema Design</li>
+              <li>Query Optimization</li>
+              <li>Data Integrity</li>
+              <li>Triggers</li>
+              <li>CDC</li>
+            </ul>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Version Control</summary>
+            <ul>
+              <li>Git</li>
+              <li>Github</li>
+              <li>Gitlab</li>
+            </ul>
+          </details>
+        </li>
+        <li class="bordered-list">
+        <details name="accordion">
+          <summary>Containerization & DevOps</summary>
+          <ul>
+            <li>Docker</li>
+            <li>Continuous Integration & Deployment</li>
+            <li>Agile Development</li>
+          </ul>
+        </details>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Cloud Platforms</summary>
+            <ul>
+              <li>Firebase</li>
+              <li>Supabase</li>
+              <li>Cloud Deployment & Monitoring</li>
+            </ul>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Software Engineering Best Practices</summary>
+            <ul>
+              <li>Test-Driven-Development(TDD)</li>
+              <li>Code Reviews</li>
+              <li>Git Branching Strategies</li>
+              <li>Safety and Cybersecurity Concepts</li>
+            </ul>
+          </details>
+        </li>
+        <li class='bordered-list'>
+          <details name="accordion">
+            <summary>Soft Skills</summary>
+            <ul style="list-style-type: none">
+              <li>
+                <details name="_accordion">
+                  <summary>Communication</summary>
+                  Strong written and verbal communication skills, ensuring clean and effective collaboration with cross-functional teams.
+                </details>
+              </li>
+              <li>
+                <details name="_accordion">
+                  <summary>Team Work</summary>
+                  Proven ability to work well in both team settings and independently, contributing to project success.
+                </details>
+              </li>
+              <li>
+                <details name="_accordion">
+                  <summary>Problem Solving</summary>
+                  Analytical thinker with a knack for identifying and solving complex technical problems.
+                </details>
+              </li>
+              <li>
+                <details name="_accordion">
+                  <summary>Adaptability</summary>
+                  Quick learner who adapts to new technologies and tools with ease.
+                </details>
+              </li>
+            </ul>
+          </details>
+        </li>
+      </ul>
+    </div>
+
+    <div id="experience">
+      <h1>Experience</h1>
+      <h2>Full Stack Developer</h2>
+      <h3 style="font-style: italic;">Freeelance | Remote | 2023 - Present</h3>
+      <ul style="list-style-type: none">
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>E-Commerce Store</summary>
+            <p><b>Technologies: </b>React.js, Node.js, Express, MongoDB</p>
+            <ul>
+              <li>
+                <p>
+                  <b>Description: </b>Developed a full-featured e-commerce
+                  platform with a shopping cart, user authentication, and
+                  payment gateway integration.
+                </p>
+              </li>
+              <li>
+                <p>
+                    <b>Key Achievements: </b>
+                    <ul>
+                        <li>Implemented JWT-based authentication, ensuring robust user security.</li>
+                        <li>Integrated M_PESA for secure payment processing, enhancing transaction reliability.</li>
+                    </ul>
+                </p>
+              </li>
+            </ul>
+          </details>
+        </li>
+       <li class="bordered-list">
+        <details name="accordion">
+            <summary>Real Time Chat Application</summary>
+            <p>
+                <b>Technologies: </b>React, Node.js, WebSocket
+            </p>
+            <ul>
+                <li>
+                    <b>Description: </b>Built a scalable, real-time chat application supporting multiple chat rooms with real-time messaging.
+                </li>
+                <li>
+                    <b>Key Achievements: </b>
+                    <ul>
+                        <li>Optimized WebSocket handling for low-latency, real-time communication.</li>
+                        <li>Improved user engagement with seamless real-time updates across clients.</li>
+                    </ul>
+                </li>
+            </ul>
+        </details>
+       </li> 
+      <li class="bordered-list">
+        <details name="accordion">
+          <summary>Password Manager</summary>
+          Developed a secure password management tool with AES-256 encryption, ensuring robust user security.
+        </details>
+      </li>
+      <li class="bordered-list">
+      <details name="accordion"><summary>Real Time Server</summary>
+      <ul>
+        <li>
+          <p><b>Technologies: </b>Typescript</p>
+        </li>
+        <li>
+          <p><b>Description: </b>Created a hot-reloading development server to accelerate the development
+          cycle.</p>
+        </li>
+        <li><b>Key Achievements:</b>
+          <ul>
+            <li>Achieved 98% test coverage, ensuring code reliability and security.</li>
+            <li>Enhanced user data protection with advanced encryption techniques.</li>
+          </ul>
+        </li>
+      </ul>
+      </details>
+    </li>
+      </ul>
+      <h1>Open-Source Contributions</h1>
+      <ul style="list-style-type: none;">
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Git Repository Manager</summary>
+            Developed a tool for managing Git repositories, automating common operations like cloning, committing, and pushing changes, resulting in improved version control processes.
+          </details>
+        </li>
+        <li class="bordered-list" >
+          <details name="accordion">
+            <summary>Collaborative Document Editor</summary>
+            Built a real-time collaborative document editor using React and WebSockets, ensuring seamless data synchronization across multiple users.
+          </details>
+        </li>
+      </ul>
+    </div>
+    <div id="contacts">
+      <h1>Contacts</h1>
+      <a href="mailto:williammuchui584@gmail.com">Email</a>
+      <a href="https://linkedin.com/in/williammuchui">LinkedIn</a>
+      <span>Phone: +25713170125</span>
+    </div>
+    <div class="bordered-list" id="take-away" style="font-style: italic;">
+      <details><summary style="font-size: larger; font-weight:bold;">Rant!!</summary>
+      <p 
+      style="padding: 5px;
+        width:fit-content;
+        background: rgb(6, 86, 117);
+        "
+        >I use Vim by the way!<br/>
+      I wanted to write my own Operating system, in 3 weeks. And then I discovered Rust@@.<br/>
+      I let my threads panic, for fun!<br/>
+      I wrote my own Rust compiler,in Rust of course, a more strictier one!<br/>
+      It tases you if you make a mistake! Coz how else are you supposed to learn Rust?<br/>
+      If it's not FOSS.... just don't!
+      I worship Torvalds@@
+      </p>
+      </details>
+    </div>
+    </div>
+    <footer>
+      
+    </footer>
+  </body>
+</html>
