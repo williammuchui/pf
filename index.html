@@ -1,80 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio Website</title>
-    <meta charset="utf-8" />
-    <meta initial-scale="1.0" />
-    <style>
-      *{
-        font-family: "Courier new";
-        text-align: start;
-        background-color: rgb(6, 86,117);
-        margin-left: 0;
-        margin-right: 0;
-        color:rgb(0,0,0)
-      }
 
-      details{
-        max-width: 80%;
-      }
-      .bordered-list{
-        border: 1px solid black;
-        margin: 1rem;
-        padding: 1rem;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container" style="
-        max-width: 80%;
-        margin: 0 0 2rem 2rem;
-        ">
-      <div id="navbar">
-    <nav
-      style="
-        display: flex;
-        flex-direction: row;
-        border-radius: 8px;
-        position: -webkit-sticky;
-        margin: 0;
-      "
-    >
-    <div style="
-      width: 100px; 
-      height: 100px; 
-      border-radius: 50%; 
-      overflow: hidden;
-      ">
-    <img src="./me1.jpeg" alt="me" style="
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;" 
-    />
-  </div>
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8" />
+  <meta initial-scale="1.0" />
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
 
-      <h1 style="padding-left: 7px">William Muchui</h1>
-      <ul style="display: flex; flex-direction: row; list-style-type: none">
-        <li style="padding-left: 7px"><a href="#about">About</a></li>
-        <li style="padding-left: 7px"><a href="#experience">Experience</a></li>
-        <li style="padding-left: 7px"><a href="#skills">Skills</a></li>
-        <li style="padding-left: 7px"><a href="#contacts">Contacts</a></li>
+<body>
+  <header id="main-header">
+    <div class="logo-side">
+      <div class="logo-base">
+        <img src="./me1.jpeg" alt="" class="logoimg" />
+      </div>
+      <a class="logo" href="#">William Muchui Mugambi</a>
+      <div class="mobile-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contacts">Contacts</a></li>
       </ul>
     </nav>
-      </div>
-
-    <div id="about" style="display:block">
+  </header>
+  
+  <div id="container">
+    <div id="about">
       <h1>About Me</h1>
-      <p id="about">
-      Highly skilled Full Stack Software Engineer with a strong foundation in software development
-      across the full software lifecycle. Proficient in a wide range of programming languages including
-      Python, JavaScript, TypeScript, and Rust. Experienced in building scalable, secure, and efficient
-      applications, with a particular focus on backend development, real-time communication, and
-      containerized environments. Passionate about open-source contributions and continuously
-      advancing the state-of-the-art in software engineering. Seeking to leverage expertise in Linux,
-      embedded systems, and CI/CD processes to deliver advanced software solutions. 
+      <p class="space">
+        Highly skilled Full Stack Software Developer and Low-Level Systems Software Engineer with a solid foundation in software development across the entire lifecycle. Proficient in a wide range of programming languages including Python, JavaScript, TypeScript, Rust, C, Zig, and Assembly for x86_64 machines. Experienced in developing scalable, secure, and efficient applications, from backend development to real-time communication and containerized environments. Passionate about kernel development, embedded systems, and contributing to open-source projects. Currently exploring Linux kernel development in C, focusing on memory management and process scheduling.
       </p>
     </div>
 
+    <br>
     <div id="skills">
       <h1>Skills</h1>
       <ul style="list-style-type: none">
@@ -82,256 +50,266 @@
           <details name="accordion">
             <summary>Languages</summary>
             <ul>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
               <li>Rust</li>
               <li>C</li>
+              <li>Zig</li>
               <li>C++</li>
-              <li>Python</li>
-              <li>Typescript</li>
-              <li>Javascript</li>
+              <li>Assembly (x86_64)</li>
             </ul>
           </details>
         </li>
-        
+
         <li class="bordered-list">
           <details name="accordion">
-            <summary>FrontEnd Development</summary>
+            <summary>Frontend Development</summary>
             <ul>
-              <li>React js</li>
+              <li>React.js</li>
               <li>HTML5</li>
               <li>CSS3</li>
-              <li>Tailwind Css</li>
+              <li>Tailwind CSS</li>
               <li>Bootstrap</li>
               <li>Responsive UI Design</li>
             </ul>
           </details>
         </li>
+
         <li class="bordered-list">
           <details name="accordion">
-            <summary>BackEnd Development</summary>
+            <summary>Backend Development</summary>
             <ul>
-              <li>Node js</li>
-              <li>Flask</li>
+              <li>FastAPI</li>
               <li>Django</li>
-              <li>RESTful APIs</li>
+              <li>Flask</li>
+              <li>Node.js</li>
+              <li>RESTful API Design</li>
+              <li>Real-Time Communication (WebSockets, Server-Sent Events)</li>
             </ul>
           </details>
         </li>
+
         <li class="bordered-list">
           <details name="accordion">
-            <summary>Real Time Communication</summary>
+            <summary>Systems Development</summary>
             <ul>
-              <li>Web Sockets</li>
-              <li>Server Sent Events</li>
+              <li>Kernel Development</li>
+              <li>Device Drivers</li>
+              <li>Systems Architecture Design</li>
+              <li>Hardware-Software Interfacing</li>
             </ul>
           </details>
         </li>
+
         <li class="bordered-list">
           <details name="accordion">
             <summary>Database Management</summary>
             <ul>
-              <li>Postgresql</li>
-              <li>Mysql</li>
+              <li>PostgreSQL</li>
+              <li>MySQL</li>
               <li>MongoDB</li>
               <li>Redis</li>
               <li>Schema Design</li>
               <li>Query Optimization</li>
               <li>Data Integrity</li>
-              <li>Triggers</li>
-              <li>CDC</li>
             </ul>
           </details>
         </li>
+
         <li class="bordered-list">
           <details name="accordion">
             <summary>Version Control</summary>
             <ul>
               <li>Git</li>
-              <li>Github</li>
-              <li>Gitlab</li>
+              <li>GitHub</li>
+              <li>GitLab</li>
             </ul>
           </details>
         </li>
-        <li class="bordered-list">
-        <details name="accordion">
-          <summary>Containerization & DevOps</summary>
-          <ul>
-            <li>Docker</li>
-            <li>Continuous Integration & Deployment</li>
-            <li>Agile Development</li>
-          </ul>
-        </details>
+
         <li class="bordered-list">
           <details name="accordion">
-            <summary>Cloud Platforms</summary>
+            <summary>DevOps & Tools</summary>
             <ul>
-              <li>Firebase</li>
-              <li>Supabase</li>
-              <li>Cloud Deployment & Monitoring</li>
+              <li>Docker</li>
+              <li>CI/CD</li>
+              <li>Agile Development</li>
             </ul>
           </details>
         </li>
+
         <li class="bordered-list">
           <details name="accordion">
-            <summary>Software Engineering Best Practices</summary>
+            <summary>Software Engineering Practices</summary>
             <ul>
-              <li>Test-Driven-Development(TDD)</li>
+              <li>Test-Driven Development (TDD)</li>
               <li>Code Reviews</li>
               <li>Git Branching Strategies</li>
-              <li>Safety and Cybersecurity Concepts</li>
-            </ul>
-          </details>
-        </li>
-        <li class='bordered-list'>
-          <details name="accordion">
-            <summary>Soft Skills</summary>
-            <ul style="list-style-type: none">
-              <li>
-                <details name="_accordion">
-                  <summary>Communication</summary>
-                  Strong written and verbal communication skills, ensuring clean and effective collaboration with cross-functional teams.
-                </details>
-              </li>
-              <li>
-                <details name="_accordion">
-                  <summary>Team Work</summary>
-                  Proven ability to work well in both team settings and independently, contributing to project success.
-                </details>
-              </li>
-              <li>
-                <details name="_accordion">
-                  <summary>Problem Solving</summary>
-                  Analytical thinker with a knack for identifying and solving complex technical problems.
-                </details>
-              </li>
-              <li>
-                <details name="_accordion">
-                  <summary>Adaptability</summary>
-                  Quick learner who adapts to new technologies and tools with ease.
-                </details>
-              </li>
+              <li>Safety & Cybersecurity Concepts</li>
             </ul>
           </details>
         </li>
       </ul>
     </div>
 
+    <br>
     <div id="experience">
       <h1>Experience</h1>
       <h2>Full Stack Developer</h2>
-      <h3 style="font-style: italic;">Freeelance | Remote | 2023 - Present</h3>
+      <h3 style="font-style: italic;">Freelance | Remote | 2023 - Present</h3>
       <ul style="list-style-type: none">
         <li class="bordered-list">
           <details name="accordion">
-            <summary>E-Commerce Store</summary>
-            <p><b>Technologies: </b>React.js, Node.js, Express, MongoDB</p>
+            <summary>E-commerce Platforms</summary>
             <ul>
               <li>
+                <p><b>Technologies: </b>React.js, Node.js, MongoDB</p>
+              </li>
+              <li>
                 <p>
-                  <b>Description: </b>Developed a full-featured e-commerce
-                  platform with a shopping cart, user authentication, and
-                  payment gateway integration.
+                  <b>Description: </b>Developed a full-featured e-commerce platform with a shopping cart, user authentication, and payment gateway integration.
                 </p>
               </li>
               <li>
                 <p>
-                    <b>Key Achievements: </b>
-                    <ul>
-                        <li>Implemented JWT-based authentication, ensuring robust user security.</li>
-                        <li>Integrated M_PESA for secure payment processing, enhancing transaction reliability.</li>
-                    </ul>
+                  <b>Key Achievements: </b>
+                  <ul>
+                    <li>Implemented JWT-based authentication, ensuring robust user security.</li>
+                    <li>Integrated M-PESA for secure payment processing, enhancing transaction reliability.</li>
+                  </ul>
                 </p>
               </li>
             </ul>
           </details>
         </li>
-       <li class="bordered-list">
-        <details name="accordion">
-            <summary>Real Time Chat Application</summary>
-            <p>
-                <b>Technologies: </b>React, Node.js, WebSocket
-            </p>
-            <ul>
-                <li>
-                    <b>Description: </b>Built a scalable, real-time chat application supporting multiple chat rooms with real-time messaging.
-                </li>
-                <li>
-                    <b>Key Achievements: </b>
-                    <ul>
-                        <li>Optimized WebSocket handling for low-latency, real-time communication.</li>
-                        <li>Improved user engagement with seamless real-time updates across clients.</li>
-                    </ul>
-                </li>
-            </ul>
-        </details>
-       </li> 
-      <li class="bordered-list">
-        <details name="accordion">
-          <summary>Password Manager</summary>
-          Developed a secure password management tool with AES-256 encryption, ensuring robust user security.
-        </details>
-      </li>
-      <li class="bordered-list">
-      <details name="accordion"><summary>Real Time Server</summary>
-      <ul>
-        <li>
-          <p><b>Technologies: </b>Typescript</p>
-        </li>
-        <li>
-          <p><b>Description: </b>Created a hot-reloading development server to accelerate the development
-          cycle.</p>
-        </li>
-        <li><b>Key Achievements:</b>
-          <ul>
-            <li>Achieved 98% test coverage, ensuring code reliability and security.</li>
-            <li>Enhanced user data protection with advanced encryption techniques.</li>
-          </ul>
-        </li>
-      </ul>
-      </details>
-    </li>
-      </ul>
-      <h1>Open-Source Contributions</h1>
-      <ul style="list-style-type: none;">
+
         <li class="bordered-list">
           <details name="accordion">
-            <summary>Git Repository Manager</summary>
-            Developed a tool for managing Git repositories, automating common operations like cloning, committing, and pushing changes, resulting in improved version control processes.
+            <summary>Real-Time Applications</summary>
+            <ul>
+              <li>
+                <p><b>Technologies: </b>Node.js, WebSockets</p>
+              </li>
+              <li>
+                <b>Description: </b>Built a scalable, real-time chat application supporting multiple chat rooms with real-time messaging.
+              </li>
+              <li>
+                <b>Key Achievements: </b>
+                <ul>
+                  <li>Optimized WebSocket handling for low-latency, real-time communication.</li>
+                  <li>Improved user engagement with seamless real-time updates across clients.</li>
+                </ul>
+              </li>
+            </ul>
           </details>
         </li>
-        <li class="bordered-list" >
+
+        <li class="bordered-list">
           <details name="accordion">
-            <summary>Collaborative Document Editor</summary>
-            Built a real-time collaborative document editor using React and WebSockets, ensuring seamless data synchronization across multiple users.
+            <summary>Password Managers & Security Intensive Applications</summary>
+            <p>Developed a secure password management tool with AES-256 encryption, ensuring robust user security.</p>
+          </details>
+        </li>
+      </ul>
+      
+      <br>
+      <h2>Systems Engineer</h2>
+      <h3 style="font-style: italic;">Freelance | Remote | 2023 - Present</h3>
+      <ul style="list-style-type: none">
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Kernel Development</summary>
+            <p>Engaged in low-level kernel programming projects, focusing on memory management and process scheduling in a Linux-based operating system.</p>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Embedded Systems</summary>
+            <p>Developed device drivers for microcontrollers to enhance communication between hardware and software components.</p>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Performance Optimization</summary>
+            <p>Analyzed and optimized codebases to reduce resource usage, improving overall system efficiency.</p>
+          </details>
+        </li>
+      </ul>
+
+      <br>
+      <h2>Software Engineer (Personal Projects)</h2>
+      <h3 style="font-style: italic;">Remote | 2023 - Present</h3>
+      <ul style="list-style-type: none">
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Hot Reload Server</summary>
+            <p>Created a hot-reloading development server using TypeScript, boosting development efficiency.</p>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>CLI Tools</summary>
+            <p>Developed command-line tools like Minigrep and a JavaScript compiler in Rust, streamlining various tasks.</p>
+          </details>
+        </li>
+        <li class="bordered-list">
+          <details name="accordion">
+            <summary>Open Source Contributions</summary>
+            <ul>
+              <li>Contributed to an open-source project aimed at automating device driver development.</li>
+              <li>Built a real-time collaborative tool for engineers, enhancing team productivity.</li>
+            </ul>
           </details>
         </li>
       </ul>
     </div>
+
+    <br>
     <div id="contacts">
       <h1>Contacts</h1>
-      <a href="mailto:williammuchui584@gmail.com">Email</a>
-      <a href="https://linkedin.com/in/williammuchui">LinkedIn</a>
-      <span>Phone: +25713170125</span>
+      <a class="space" href="mailto:williammuchui584@gmail.com">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a class="space" href="https://linkedin.com/in/williammuchui">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <span class="space"><i class="fas fa-phone"></i> Phone: +254713170125</span>
     </div>
-    <div class="bordered-list" id="take-away" style="font-style: italic;">
-      <details><summary style="font-size: larger; font-weight:bold;">Rant!!</summary>
-      <p 
-      style="padding: 5px;
-        width:fit-content;
-        background: rgb(6, 86, 117);
-        "
-        >I use Vim by the way!<br/>
-      I wanted to write my own Operating system, in 3 weeks. And then I discovered Rust@@.<br/>
-      I let my threads panic, for fun!<br/>
-      I wrote my own Rust compiler,in Rust of course, a more strictier one!<br/>
-      It tases you if you make a mistake! Coz how else are you supposed to learn Rust?<br/>
-      If it's not FOSS.... just don't!
-      I worship Torvalds@@
-      </p>
-      </details>
+
+    <ul style="list-style-type: none;">
+      <li class="bordered-list">
+        <details name="accordion">
+          <summary>Rant!!</summary>
+          <ul>
+            <li>
+              <p style="padding: 5px; width:fit-content;">I use Vim by the way!<br />
+                I wanted to write my own Operating system, in 3 weeks. And then I discovered Rust.<br />
+                I let my threads panic, for fun!<br />
+                I wrote my own Rust compiler, in Rust of course, a stricter one!<br />
+                It tests you if you make a mistake! Coz how else are you supposed to learn Rust?<br />
+                If it's not FOSS.... just don't!
+                I worship Torvalds.
+              </p>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <footer class="br-footer">
+    <hr class="hr-wide">
+    <div class="container-lg">
+      <div class="info">
+        <div class="text-down-3">2024,&nbsp;<strong>William Muchui Mugambi.</strong></div>
+      </div>
     </div>
-    </div>
-    <footer>
-      
-    </footer>
-  </body>
+    <hr class="hr-wide">
+  </footer>
+</body>
+
 </html>
